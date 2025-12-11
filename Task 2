@@ -1,0 +1,21 @@
+#open a shell terminal
+nano surrya.sh
+
+#type the below code in the shell terminal
+#!/bin/bash
+echo -n "Enter filename: "
+read filename
+if [ -f "$filename" ]; then
+    echo "File '$filename' exists."
+else
+    echo "File '$filename' does NOT exist."
+fi
+
+#Allow execution access 
+chmod +x surrya.sh
+
+#Run the code
+./surrya.sh
+
+
+
